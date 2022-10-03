@@ -1,0 +1,17 @@
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\bin\Debug\net6.0\Trigent.Core.Framework.deps.json
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\bin\Debug\net6.0\Trigent.Core.Framework.dll
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\bin\Debug\net6.0\Trigent.Core.Framework.pdb
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\obj\Debug\net6.0\Trigent.Core.Framework.csproj.AssemblyReference.cache
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\obj\Debug\net6.0\Trigent.Core.Framework.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\obj\Debug\net6.0\Trigent.Core.Framework.AssemblyInfoInputs.cache
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\obj\Debug\net6.0\Trigent.Core.Framework.AssemblyInfo.cs
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\obj\Debug\net6.0\Trigent.Core.Framework.csproj.CoreCompileInputs.cache
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\obj\Debug\net6.0\Trigent.Core.Framework.dll
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\obj\Debug\net6.0\refint\Trigent.Core.Framework.dll
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\obj\Debug\net6.0\Trigent.Core.Framework.pdb
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\obj\Debug\net6.0\ref\Trigent.Core.Framework.dll
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\bin\Debug\net6.0\Trigent.Core.Infrastructure.dll
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\bin\Debug\net6.0\Trigent.Core.Infrastructure.pdb
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\obj\Debug\net6.0\Trigent.Core.Framework.csproj.CopyComplete
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\bin\Debug\net6.0\Trigent.Core.Domain.dll
+D:\Trigent.Core.Api.Samples\Trigent.Core.Framework\bin\Debug\net6.0\Trigent.Core.Domain.pdb

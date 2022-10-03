@@ -1,0 +1,100 @@
+[2022-10-03 13:05:11.184 +05:30  INF]  Application Starting.##############3
+[2022-10-03 13:05:20.084 +05:30  INF]  Now listening on: http://localhost:5263
+[2022-10-03 13:05:20.113 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-03 13:05:20.114 +05:30  INF]  Hosting environment: Development
+[2022-10-03 13:05:20.114 +05:30  INF]  Content root path: D:\Demo.Core.Api.Samples\Demo.Core.Api
+[2022-10-03 13:05:26.111 +05:30  INF]  Request starting HTTP/1.1 GET http://localhost:5263/swagger/index.html - -
+[2022-10-03 13:05:29.814 +05:30  INF]  Request starting HTTP/1.1 GET http://localhost:5263/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-03 13:05:29.835 +05:30  INF]  Request finished HTTP/1.1 GET http://localhost:5263/swagger/index.html - - - 200 - text/html;charset=utf-8 3745.4117ms
+[2022-10-03 13:05:29.998 +05:30  INF]  Request finished HTTP/1.1 GET http://localhost:5263/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 183.7969ms
+[2022-10-03 13:05:30.298 +05:30  INF]  Request starting HTTP/1.1 GET http://localhost:5263/_vs/browserLink - -
+[2022-10-03 13:05:32.336 +05:30  INF]  Request finished HTTP/1.1 GET http://localhost:5263/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 2038.3187ms
+[2022-10-03 13:05:32.453 +05:30  INF]  Request starting HTTP/1.1 GET http://localhost:5263/swagger/v1/swagger.json - -
+[2022-10-03 13:05:33.656 +05:30  INF]  Request finished HTTP/1.1 GET http://localhost:5263/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1203.7275ms
+[2022-10-03 13:05:46.072 +05:30  INF]  Request starting HTTP/1.1 GET http://localhost:5263/Product/products - -
+[2022-10-03 13:05:46.119 +05:30  WRN]  Failed to determine the https port for redirect.
+[2022-10-03 13:05:46.274 +05:30  INF]  Executing endpoint 'Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api)'
+[2022-10-03 13:05:46.384 +05:30  INF]  Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Demo.Core.Api.Controllers.ProductController (Demo.Core.Api).
+[2022-10-03 13:05:46.584 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Demo.Core.Domain.Models.Product, Demo.Core.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-03 13:05:46.640 +05:30  INF]  Executed action Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api) in 235.4118ms
+[2022-10-03 13:05:46.641 +05:30  INF]  Executed endpoint 'Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api)'
+[2022-10-03 13:05:46.642 +05:30  INF]  Request finished HTTP/1.1 GET http://localhost:5263/Product/products - - - 200 - application/json;+charset=utf-8 569.7236ms
+[2022-10-03 13:06:05.098 +05:30  INF]  Request starting HTTP/1.1 GET http://localhost:5263/Product/product?productSKu=MILK - -
+[2022-10-03 13:06:05.104 +05:30  INF]  Executing endpoint 'Demo.Core.Api.Controllers.ProductController.Get (Demo.Core.Api)'
+[2022-10-03 13:06:05.174 +05:30  INF]  Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String) on controller Demo.Core.Api.Controllers.ProductController (Demo.Core.Api).
+[2022-10-03 13:06:05.273 +05:30  INF]  Getting product information
+[2022-10-03 13:06:05.282 +05:30  INF]  Executing OkObjectResult, writing value of type 'Demo.Core.Domain.Models.Product'.
+[2022-10-03 13:06:05.285 +05:30  INF]  Executed action Demo.Core.Api.Controllers.ProductController.Get (Demo.Core.Api) in 110.1994ms
+[2022-10-03 13:06:05.285 +05:30  INF]  Executed endpoint 'Demo.Core.Api.Controllers.ProductController.Get (Demo.Core.Api)'
+[2022-10-03 13:06:05.285 +05:30  INF]  Request finished HTTP/1.1 GET http://localhost:5263/Product/product?productSKu=MILK - - - 200 - application/json;+charset=utf-8 186.7101ms
+[2022-10-03 13:06:58.054 +05:30  INF]  Request starting HTTP/1.1 POST http://localhost:5263/Product application/json 194
+[2022-10-03 13:06:58.055 +05:30  INF]  Executing endpoint 'Demo.Core.Api.Controllers.ProductController.Create (Demo.Core.Api)'
+[2022-10-03 13:06:58.066 +05:30  INF]  Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Demo.Core.Domain.Models.Product) on controller Demo.Core.Api.Controllers.ProductController (Demo.Core.Api).
+[2022-10-03 13:06:58.321 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Boolean'.
+[2022-10-03 13:06:58.321 +05:30  INF]  Executed action Demo.Core.Api.Controllers.ProductController.Create (Demo.Core.Api) in 254.7416ms
+[2022-10-03 13:06:58.321 +05:30  INF]  Executed endpoint 'Demo.Core.Api.Controllers.ProductController.Create (Demo.Core.Api)'
+[2022-10-03 13:06:58.322 +05:30  INF]  Request finished HTTP/1.1 POST http://localhost:5263/Product application/json 194 - 200 - application/json;+charset=utf-8 267.6505ms
+[2022-10-03 13:07:24.435 +05:30  INF]  Request starting HTTP/1.1 GET http://localhost:5263/Product/products - -
+[2022-10-03 13:07:24.475 +05:30  INF]  Executing endpoint 'Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api)'
+[2022-10-03 13:07:24.476 +05:30  INF]  Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Demo.Core.Api.Controllers.ProductController (Demo.Core.Api).
+[2022-10-03 13:07:24.476 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Demo.Core.Domain.Models.Product, Demo.Core.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-03 13:07:24.477 +05:30  INF]  Executed action Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api) in 0.898ms
+[2022-10-03 13:07:24.477 +05:30  INF]  Executed endpoint 'Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api)'
+[2022-10-03 13:07:24.477 +05:30  INF]  Request finished HTTP/1.1 GET http://localhost:5263/Product/products - - - 200 - application/json;+charset=utf-8 42.3936ms
+[2022-10-03 13:07:57.221 +05:30  INF]  Request starting HTTP/1.1 POST http://localhost:5263/Product application/json 194
+[2022-10-03 13:07:57.221 +05:30  INF]  Executing endpoint 'Demo.Core.Api.Controllers.ProductController.Create (Demo.Core.Api)'
+[2022-10-03 13:07:57.221 +05:30  INF]  Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Demo.Core.Domain.Models.Product) on controller Demo.Core.Api.Controllers.ProductController (Demo.Core.Api).
+[2022-10-03 13:07:57.256 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Boolean'.
+[2022-10-03 13:07:57.256 +05:30  INF]  Executed action Demo.Core.Api.Controllers.ProductController.Create (Demo.Core.Api) in 35.1131ms
+[2022-10-03 13:07:57.261 +05:30  INF]  Executed endpoint 'Demo.Core.Api.Controllers.ProductController.Create (Demo.Core.Api)'
+[2022-10-03 13:07:57.261 +05:30  INF]  Request finished HTTP/1.1 POST http://localhost:5263/Product application/json 194 - 200 - application/json;+charset=utf-8 40.6176ms
+[2022-10-03 13:08:10.518 +05:30  INF]  Request starting HTTP/1.1 GET http://localhost:5263/Product/products - -
+[2022-10-03 13:08:10.518 +05:30  INF]  Executing endpoint 'Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api)'
+[2022-10-03 13:08:10.518 +05:30  INF]  Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Demo.Core.Api.Controllers.ProductController (Demo.Core.Api).
+[2022-10-03 13:08:10.521 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Demo.Core.Domain.Models.Product, Demo.Core.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-03 13:08:10.522 +05:30  INF]  Executed action Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api) in 3.1335ms
+[2022-10-03 13:08:10.522 +05:30  INF]  Executed endpoint 'Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api)'
+[2022-10-03 13:08:10.522 +05:30  INF]  Request finished HTTP/1.1 GET http://localhost:5263/Product/products - - - 200 - application/json;+charset=utf-8 6.0580ms
+[2022-10-03 13:08:34.466 +05:30  INF]  Request starting HTTP/1.1 POST http://localhost:5263/Product application/json 192
+[2022-10-03 13:08:34.466 +05:30  INF]  Executing endpoint 'Demo.Core.Api.Controllers.ProductController.Create (Demo.Core.Api)'
+[2022-10-03 13:08:34.466 +05:30  INF]  Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Demo.Core.Domain.Models.Product) on controller Demo.Core.Api.Controllers.ProductController (Demo.Core.Api).
+[2022-10-03 13:08:34.469 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Boolean'.
+[2022-10-03 13:08:34.470 +05:30  INF]  Executed action Demo.Core.Api.Controllers.ProductController.Create (Demo.Core.Api) in 3.3753ms
+[2022-10-03 13:08:34.471 +05:30  INF]  Executed endpoint 'Demo.Core.Api.Controllers.ProductController.Create (Demo.Core.Api)'
+[2022-10-03 13:08:34.472 +05:30  INF]  Request finished HTTP/1.1 POST http://localhost:5263/Product application/json 192 - 200 - application/json;+charset=utf-8 5.8215ms
+[2022-10-03 13:08:45.157 +05:30  INF]  Request starting HTTP/1.1 GET http://localhost:5263/Product/product?productSKu=MILK - -
+[2022-10-03 13:08:45.158 +05:30  INF]  Executing endpoint 'Demo.Core.Api.Controllers.ProductController.Get (Demo.Core.Api)'
+[2022-10-03 13:08:45.158 +05:30  INF]  Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String) on controller Demo.Core.Api.Controllers.ProductController (Demo.Core.Api).
+[2022-10-03 13:08:45.159 +05:30  INF]  Getting product information
+[2022-10-03 13:08:45.159 +05:30  INF]  Executing OkObjectResult, writing value of type 'Demo.Core.Domain.Models.Product'.
+[2022-10-03 13:08:45.160 +05:30  INF]  Executed action Demo.Core.Api.Controllers.ProductController.Get (Demo.Core.Api) in 1.2288ms
+[2022-10-03 13:08:45.160 +05:30  INF]  Executed endpoint 'Demo.Core.Api.Controllers.ProductController.Get (Demo.Core.Api)'
+[2022-10-03 13:08:45.160 +05:30  INF]  Request finished HTTP/1.1 GET http://localhost:5263/Product/product?productSKu=MILK - - - 200 - application/json;+charset=utf-8 2.2285ms
+[2022-10-03 13:08:52.084 +05:30  INF]  Request starting HTTP/1.1 GET http://localhost:5263/Product/products - -
+[2022-10-03 13:08:52.084 +05:30  INF]  Executing endpoint 'Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api)'
+[2022-10-03 13:08:52.085 +05:30  INF]  Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Demo.Core.Api.Controllers.ProductController (Demo.Core.Api).
+[2022-10-03 13:08:52.085 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Demo.Core.Domain.Models.Product, Demo.Core.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-03 13:08:52.085 +05:30  INF]  Executed action Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api) in 0.2901ms
+[2022-10-03 13:08:52.085 +05:30  INF]  Executed endpoint 'Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api)'
+[2022-10-03 13:08:52.085 +05:30  INF]  Request finished HTTP/1.1 GET http://localhost:5263/Product/products - - - 200 - application/json;+charset=utf-8 1.0485ms
+[2022-10-03 13:09:11.279 +05:30  INF]  Request starting HTTP/1.1 POST http://localhost:5263/Product/notify?message=test - 0
+[2022-10-03 13:09:11.280 +05:30  INF]  Executing endpoint 'Demo.Core.Api.Controllers.ProductController.NotifyAsync (Demo.Core.Api)'
+[2022-10-03 13:09:11.291 +05:30  INF]  Route matched with {action = "Notify", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] NotifyAsync(System.String) on controller Demo.Core.Api.Controllers.ProductController (Demo.Core.Api).
+[2022-10-03 13:09:11.316 +05:30  INF]  Executing StatusCodeResult, setting HTTP status code 200
+[2022-10-03 13:09:11.316 +05:30  INF]  Executed action Demo.Core.Api.Controllers.ProductController.NotifyAsync (Demo.Core.Api) in 24.6939ms
+[2022-10-03 13:09:11.316 +05:30  INF]  Executed endpoint 'Demo.Core.Api.Controllers.ProductController.NotifyAsync (Demo.Core.Api)'
+[2022-10-03 13:09:11.317 +05:30  INF]  Request finished HTTP/1.1 POST http://localhost:5263/Product/notify?message=test - 0 - 200 0 - 37.4959ms
+[2022-10-03 13:09:33.873 +05:30  INF]  Request starting HTTP/1.1 DELETE http://localhost:5263/Product?productSku=MILK - -
+[2022-10-03 13:09:33.881 +05:30  INF]  Executing endpoint 'Demo.Core.Api.Controllers.ProductController.Remove (Demo.Core.Api)'
+[2022-10-03 13:09:33.898 +05:30  INF]  Route matched with {action = "Remove", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Remove(System.String) on controller Demo.Core.Api.Controllers.ProductController (Demo.Core.Api).
+[2022-10-03 13:09:33.912 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Boolean'.
+[2022-10-03 13:09:33.912 +05:30  INF]  Executed action Demo.Core.Api.Controllers.ProductController.Remove (Demo.Core.Api) in 13.4414ms
+[2022-10-03 13:09:33.912 +05:30  INF]  Executed endpoint 'Demo.Core.Api.Controllers.ProductController.Remove (Demo.Core.Api)'
+[2022-10-03 13:09:33.912 +05:30  INF]  Request finished HTTP/1.1 DELETE http://localhost:5263/Product?productSku=MILK - - - 200 - application/json;+charset=utf-8 40.0368ms
+[2022-10-03 13:09:44.543 +05:30  INF]  Request starting HTTP/1.1 GET http://localhost:5263/Product/products - -
+[2022-10-03 13:09:44.544 +05:30  INF]  Executing endpoint 'Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api)'
+[2022-10-03 13:09:44.544 +05:30  INF]  Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Demo.Core.Api.Controllers.ProductController (Demo.Core.Api).
+[2022-10-03 13:09:44.545 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Demo.Core.Domain.Models.Product, Demo.Core.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-03 13:09:44.545 +05:30  INF]  Executed action Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api) in 0.6459ms
+[2022-10-03 13:09:44.545 +05:30  INF]  Executed endpoint 'Demo.Core.Api.Controllers.ProductController.GetAll (Demo.Core.Api)'
+[2022-10-03 13:09:44.546 +05:30  INF]  Request finished HTTP/1.1 GET http://localhost:5263/Product/products - - - 200 - application/json;+charset=utf-8 1.9307ms

@@ -1,0 +1,12 @@
+D:\Trigent.Core.Api.Samples\Trigent.Core.Logging\bin\Debug\net6.0\Trigent.Core.Logging.deps.json
+D:\Trigent.Core.Api.Samples\Trigent.Core.Logging\bin\Debug\net6.0\Trigent.Core.Logging.dll
+D:\Trigent.Core.Api.Samples\Trigent.Core.Logging\bin\Debug\net6.0\Trigent.Core.Logging.pdb
+D:\Trigent.Core.Api.Samples\Trigent.Core.Logging\obj\Debug\net6.0\Trigent.Core.Logging.csproj.AssemblyReference.cache
+D:\Trigent.Core.Api.Samples\Trigent.Core.Logging\obj\Debug\net6.0\Trigent.Core.Logging.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trigent.Core.Api.Samples\Trigent.Core.Logging\obj\Debug\net6.0\Trigent.Core.Logging.AssemblyInfoInputs.cache
+D:\Trigent.Core.Api.Samples\Trigent.Core.Logging\obj\Debug\net6.0\Trigent.Core.Logging.AssemblyInfo.cs
+D:\Trigent.Core.Api.Samples\Trigent.Core.Logging\obj\Debug\net6.0\Trigent.Core.Logging.csproj.CoreCompileInputs.cache
+D:\Trigent.Core.Api.Samples\Trigent.Core.Logging\obj\Debug\net6.0\Trigent.Core.Logging.dll
+D:\Trigent.Core.Api.Samples\Trigent.Core.Logging\obj\Debug\net6.0\refint\Trigent.Core.Logging.dll
+D:\Trigent.Core.Api.Samples\Trigent.Core.Logging\obj\Debug\net6.0\Trigent.Core.Logging.pdb
+D:\Trigent.Core.Api.Samples\Trigent.Core.Logging\obj\Debug\net6.0\ref\Trigent.Core.Logging.dll

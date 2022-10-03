@@ -1,0 +1,12 @@
+D:\PlayGoKids-main\PlayGoKids-main\2022-03-27\CQRSAndMediatrSample\CQRSAndMediatrSampleApplication\bin\Debug\net6.0\CQRSAndMediatrSampleApplication.deps.json
+D:\PlayGoKids-main\PlayGoKids-main\2022-03-27\CQRSAndMediatrSample\CQRSAndMediatrSampleApplication\bin\Debug\net6.0\CQRSAndMediatrSampleApplication.dll
+D:\PlayGoKids-main\PlayGoKids-main\2022-03-27\CQRSAndMediatrSample\CQRSAndMediatrSampleApplication\bin\Debug\net6.0\CQRSAndMediatrSampleApplication.pdb
+D:\PlayGoKids-main\PlayGoKids-main\2022-03-27\CQRSAndMediatrSample\CQRSAndMediatrSampleApplication\obj\Debug\net6.0\CQRSAndMediatrSampleApplication.csproj.AssemblyReference.cache
+D:\PlayGoKids-main\PlayGoKids-main\2022-03-27\CQRSAndMediatrSample\CQRSAndMediatrSampleApplication\obj\Debug\net6.0\CQRSAndMediatrSampleApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\PlayGoKids-main\PlayGoKids-main\2022-03-27\CQRSAndMediatrSample\CQRSAndMediatrSampleApplication\obj\Debug\net6.0\CQRSAndMediatrSampleApplication.AssemblyInfoInputs.cache
+D:\PlayGoKids-main\PlayGoKids-main\2022-03-27\CQRSAndMediatrSample\CQRSAndMediatrSampleApplication\obj\Debug\net6.0\CQRSAndMediatrSampleApplication.AssemblyInfo.cs
+D:\PlayGoKids-main\PlayGoKids-main\2022-03-27\CQRSAndMediatrSample\CQRSAndMediatrSampleApplication\obj\Debug\net6.0\CQRSAndMediatrSampleApplication.csproj.CoreCompileInputs.cache
+D:\PlayGoKids-main\PlayGoKids-main\2022-03-27\CQRSAndMediatrSample\CQRSAndMediatrSampleApplication\obj\Debug\net6.0\CQRSAndMediatrSampleApplication.dll
+D:\PlayGoKids-main\PlayGoKids-main\2022-03-27\CQRSAndMediatrSample\CQRSAndMediatrSampleApplication\obj\Debug\net6.0\refint\CQRSAndMediatrSampleApplication.dll
+D:\PlayGoKids-main\PlayGoKids-main\2022-03-27\CQRSAndMediatrSample\CQRSAndMediatrSampleApplication\obj\Debug\net6.0\CQRSAndMediatrSampleApplication.pdb
+D:\PlayGoKids-main\PlayGoKids-main\2022-03-27\CQRSAndMediatrSample\CQRSAndMediatrSampleApplication\obj\Debug\net6.0\ref\CQRSAndMediatrSampleApplication.dll

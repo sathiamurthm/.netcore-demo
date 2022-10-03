@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "nNy3LWQTVQLRNCatknmXgXEz9IqwWi1c1fEoprtrMC8cJ0Lutyg3cJVihnP40EBkS1Pz9k9WfXmF4CDN9WWw3w==",
+  "success": true,
+  "projectFilePath": "D:\\Trigent.Core.Api.Samples\\Trigent.Core.Infrastructure\\Trigent.Core.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sathiamurthi_m\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\sathiamurthi_m\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\sathiamurthi_m\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

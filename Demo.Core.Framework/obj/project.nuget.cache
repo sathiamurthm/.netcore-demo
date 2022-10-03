@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "i3gcYqYUJf7Kqqn1ewlWJ/Rt764TMg6Sd8a9mDp74kgUK/Jl+wQU1DuQ9YXZIsjl2z66NVSjhVdpQg24H0yLDQ==",
+  "success": false,
+  "projectFilePath": "D:\\Trigent.Core.Api.Samples\\Trigent.Core.Framework\\Demo.Core.Framework.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sathiamurthi_m\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\sathiamurthi_m\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\sathiamurthi_m\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\sathiamurthi_m\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'D:\\Trigent.Core.Api.Samples\\Demo.Core.Infrastructure.Modules\\Demo.Core.Infrastructure.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\Trigent.Core.Api.Samples\\Demo.Core.Infrastructure.Modules\\Demo.Core.Infrastructure.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'D:\\Trigent.Core.Api.Samples\\Demo.Core.Domain\\DemoDemo.Core.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\Trigent.Core.Api.Samples\\Demo.Core.Domain\\DemoDemo.Core.Domain.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
