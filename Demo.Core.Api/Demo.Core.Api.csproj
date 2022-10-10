@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Trigent.Core.Framework\Demo.Core.Framework.csproj" />
+    <ProjectReference Include="..\Demo.Core.Framework\Demo.Core.Framework.csproj" />
   </ItemGroup>
 
 </Project>

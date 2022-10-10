@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Core.Api", "Trigent.Core.Api\Demo.Core.Api.csproj", "{36C45E4C-7BDF-4BA2-9A19-F004DC7933D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Core.Api", "Demo.Core.Api\Demo.Core.Api.csproj", "{36C45E4C-7BDF-4BA2-9A19-F004DC7933D8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Core.Framework", "Trigent.Core.Framework\Demo.Core.Framework.csproj", "{14883916-1BA0-4F46-9ECF-BA1DE5ECD632}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Core.Framework", "Demo.Core.Framework\Demo.Core.Framework.csproj", "{14883916-1BA0-4F46-9ECF-BA1DE5ECD632}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0BE33B23-5592-4BDF-BC59-C7F16C314AB9}"
 EndProject
@@ -21,11 +21,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{682B71
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E354F83C-5B6C-42BC-9DCF-78778700036C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trigent.Core.Infrastructure", "Trigent.Core.Infrastructure.Modules\Trigent.Core.Infrastructure.csproj", "{F92F7D42-FE39-4F9C-90CE-E7A5E0F4664D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Core.Infrastructure", "Demo.Core.Infrastructure.Modules\Demo.Core.Infrastructure.csproj", "{F92F7D42-FE39-4F9C-90CE-E7A5E0F4664D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Core.Logging", "Trigent.Core.Logging\Demo.Core.Logging.csproj", "{FC41E587-167E-4806-A140-115550C6D694}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Core.Logging", "Demo.Core.Logging\Demo.Core.Logging.csproj", "{FC41E587-167E-4806-A140-115550C6D694}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Core.Domain", "Trigent.Core.Domain\Demo.Core.Domain.csproj", "{0A7C21DC-A327-4F9D-A921-1F715F4974F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Core.Domain", "Demo.Core.Domain\Demo.Core.Domain.csproj", "{0A7C21DC-A327-4F9D-A921-1F715F4974F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
