@@ -4,7 +4,7 @@ using Demo.Core.Domain.Models;
 namespace Demo.Application.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+   
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]

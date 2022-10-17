@@ -12,4 +12,12 @@ namespace Demo.Application.Web
 
         public string Summary { get; set; }
     }
+    public partial class Employee
+    {
+        public string EmployeeId { get; set; }
+        public string Name { get; set; }
+        public string City { get; set; }
+        public string Department { get; set; }
+        public string Gender { get; set; }
+    }
 }

@@ -36,7 +36,7 @@ namespace Demo.Application.Web.Controllers
         public async Task<IEnumerable<WeatherForecast>> Get()
         {
             HttpClient client = new HttpClient();
-            var  model =   await client.GetFromJsonAsync<IEnumerable<WeatherForecast>>(apiUrl);
+            var  model =   await client.GetFromJsonAsync<IEnumerable<WeatherForecast>>(apiUrl + "weatherforecast");
             //IEnumerable<WeatherForecast> forecasts =  client.GetAsync("http://localhost:5263/WeatherForecast/weatherforecast") as IEnumerable<WeatherForecast>;
             return model;
         }

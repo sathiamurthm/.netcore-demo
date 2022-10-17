@@ -6,11 +6,19 @@ import Counter from './components/Counter';
 import FetchData from './components/FetchData';
 
 import './custom.css'
+import FetchEmployee from './components/FetchEmployee';
+import AddEmployee from './components/AddEmployee';
+
 
 export default () => (
     <Layout>
         <Route exact path='/' component={Home} />
         <Route path='/counter' component={Counter} />
         <Route path='/fetch-data/:startDateIndex?' component={FetchData} />
+        <Route path='/employee/:startDateIndex?' component={FetchEmployee} />
+        <Route path='/employee/edit/:startDateIndex?' component={AddEmployee} />
+        <Route path='/addemployee' component={AddEmployee} />
+
+
     </Layout>
 );
