@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using System.Text;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -39,9 +40,15 @@ namespace Demo.Application.Web.Controllers
         }
 
         [HttpPost]
-        [Route("api/Employee/Create")]
-        public int Create(Employee employee)
+        [Route("create")]
+        public async Task<int> Create([FromBody] Employee employee)
         {
+            HttpClient client = new HttpClient();
+            var json = Newtonsoft.Json.JsonConvert.SerializeObject(employee);
+            var data = new System.Net.Http.StringContent(json, Encoding.UTF8, "application/json");
+            var model = await client.PostAsync(apiUrl + "employees/Create", data);
+            //IEnumerable<WeatherForecast> forecasts =  client.GetAsync("http://localhost:5263/WeatherForecast/weatherforecast") as IEnumerable<WeatherForecast>;
+          
             return 0;
         }
 

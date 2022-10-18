@@ -62,7 +62,7 @@ namespace Demo.Core.Api.Controllers
 
         [HttpPost]
         [Route("employees/Create")]
-        public int Create(Employee employee)
+        public int Create([FromBody] Employee employee)
         {
             //return empData..AddEmployee(employee);
             return 0;

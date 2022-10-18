@@ -83,38 +83,47 @@ export class AddEmployee extends React.Component<Props<EmployeeProps>, FetchEmpl
 
     // This will handle the submit form event.
     private handleSave(event) {
+        console.log(event);
         event.preventDefault();
-        const data = new FormData(event.target);
+        const data = new FormData(event.target.value);
+        //const data = {
+        //    employeeId: "string",
+        //    name: "string",
+        //    city: "string",
+        //    department: "string",
+        //    gender: "string"
+        //};
 
         // PUT request for Edit employee.
         if (this.state.empList.employeeId) {
-            fetch('api/Employee/Edit', {
+            fetch('employee/create', {
                 method: 'PUT',
-                body: data,
+                body: JSON.stringify(data),
 
             }).then((response) => response.json())
                 .then((responseJson) => {
-                    this.props.history.push("/fetchemployee");
+                    this.props.history.push("/employee");
                 })
         }
-
         // POST request for Add employee.
         else {
-            fetch('api/Employee/Create', {
+            fetch('https://localhost:44395/employee/create', {
                 method: 'POST',
-                body: data,
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
 
             }).then((response) => response.json())
                 .then((responseJson) => {
-                    this.props.history.push("/fetchemployee");
+                    console.log('responseJson' , responseJson)
+                    this.props.history.push("/employee");
                 })
         }
     }
 
     // This will handle Cancel button click event.
-    private handleCancel(e) {
+    private handleCancel(e: any) {
         e.preventDefault();
-        this.props.history.push("/fetchemployee");
+        this.props.history.push("/employee");
     }
 
     // Returns the HTML Form to the render() method.
