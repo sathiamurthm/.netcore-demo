@@ -1,6 +1,6 @@
 ﻿import * as React from 'react';
 import { RouteComponentProps, StaticContext } from 'react-router';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useParams} from 'react-router-dom';
 import * as EmployeeStore from '../store/Employee';
 import { ApplicationState } from '../store';
 import { connect } from 'react-redux';
@@ -31,11 +31,12 @@ interface FetchEmployeeDataState {
 }
 
 
-
 export class AddEmployee extends React.Component<Props<EmployeeProps>, FetchEmployeeDataState> {
+    
+
     constructor(props: Props<EmployeeProps>) {
         super(props);
-
+       
         this.state = {
             title: "", loading: true, empList: new Employee
         };
@@ -45,12 +46,11 @@ export class AddEmployee extends React.Component<Props<EmployeeProps>, FetchEmpl
         //    .then(data => {
         //        this.setState({ cityList: data });
         //    });
-
-        var empid = 0;
-
+        const code:any = props.match.params;
+        const empid:string = code.empid;
         // This will set state for Edit employee
-        if (empid > 0) {
-            fetch('api/Employee/Details/' + empid)
+        if (empid != null) {
+            fetch('employee/' + empid)
                 .then(response => response.json() as Promise<EmployeeStore.Employee>)
                 .then(data => {
                     this.setState({ title: "Edit", loading: false, empList: data });
@@ -85,20 +85,30 @@ export class AddEmployee extends React.Component<Props<EmployeeProps>, FetchEmpl
     private handleSave(event) {
         console.log(event);
         event.preventDefault();
-        const data = new FormData(event.target.value);
+        const formData = new FormData(event.target);
+
+        const payload =  {
+            employeeId: formData.get("employeeId"),
+            department: formData.get("Department"),
+            name: formData.get("name"), 
+            gender: formData.get("gender"), 
+                 };
+            
         //const data = {
         //    employeeId: "string",
         //    name: "string",
         //    city: "string",
         //    department: "string",
         //    gender: "string"
+
         //};
 
         // PUT request for Edit employee.
         if (this.state.empList.employeeId) {
-            fetch('employee/create', {
+            fetch('employee/update', {
                 method: 'PUT',
-                body: JSON.stringify(data),
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
 
             }).then((response) => response.json())
                 .then((responseJson) => {
@@ -107,10 +117,10 @@ export class AddEmployee extends React.Component<Props<EmployeeProps>, FetchEmpl
         }
         // POST request for Add employee.
         else {
-            fetch('https://localhost:44395/employee/create', {
+            fetch('employee/create', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data),
+                body: JSON.stringify(payload),
 
             }).then((response) => response.json())
                 .then((responseJson) => {
@@ -129,7 +139,7 @@ export class AddEmployee extends React.Component<Props<EmployeeProps>, FetchEmpl
     // Returns the HTML Form to the render() method.
     private renderCreateForm() {
         return (
-            <form onSubmit={this.handleSave} >
+            <form  onSubmit={this.handleSave} >
                 <div className="form-group row" >
                     <input type="hidden" name="employeeId" value={this.state.empList.employeeId} />
                 </div>

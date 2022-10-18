@@ -30,9 +30,9 @@ export class FetchEmployee extends React.Component<Props<EmployeeProps>, FetchEm
         this.state = { empList:[],title:"name", loading: true };
 
         fetch('employee')
-            .then(response => response.json() as Promise<[EmployeeStore.Employee]>)
+            .then(response => response.json() as Promise<EmployeeStore.APIResponse>)
             .then(data => {
-                this.setState({ empList: data, loading: false });
+                this.setState({ empList: data.data as EmployeeStore.Employee[] , loading: false });
             });
 
         // This binding is necessary to make "this" work in the callback
@@ -78,7 +78,7 @@ export class FetchEmployee extends React.Component<Props<EmployeeProps>, FetchEm
     }
 
     private handleEdit(id: string) {
-        this.props.history.push("/employee/edit/" + id);
+        this.props.history.push("/editemployee/edit/" + id);
     }
 
     // Returns the HTML table to the render() method.

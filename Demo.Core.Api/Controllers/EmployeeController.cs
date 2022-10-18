@@ -54,10 +54,16 @@ namespace Demo.Core.Api.Controllers
         }
         [HttpGet]
         [Route("employees")]
-        public IEnumerable<Employee> Index()
+        public APIResponse Index()
         {
-          
-            return empData;
+
+            APIResponse response = new APIResponse
+            {
+                Success = "true",
+                Message = "Retrieved Successfully",
+                Data = empData,
+            };
+            return response;
         }
 
         [HttpPost]

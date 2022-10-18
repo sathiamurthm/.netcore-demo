@@ -20,4 +20,14 @@ namespace Demo.Application.Web
         public string Department { get; set; }
         public string Gender { get; set; }
     }
+
+    // API shakehand object
+    public class APIResponse
+    {
+        public string? Success { get; set; }
+        public string? Message { get; set; }
+        public dynamic[]? Data { get; set; }
+        public string? ErrorCode { get; set; }
+
+    }
 }

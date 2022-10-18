@@ -8,6 +8,9 @@ using System.Net.Http.Json;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Text;
+using Newtonsoft.Json.Linq;
+using System.Dynamic;
+using Microsoft.AspNetCore.DataProtection.KeyManagement;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -31,10 +34,10 @@ namespace Demo.Application.Web.Controllers
         }
 
         [HttpGet]
-        public async Task <IEnumerable<Employee>> Get()
+        public async Task<APIResponse> Get()
         {
             HttpClient client = new HttpClient();
-            var model = await client.GetFromJsonAsync<IEnumerable<Employee>>(apiUrl + "employees");
+            dynamic model = await client.GetFromJsonAsync<APIResponse>(apiUrl + "employees");
             //IEnumerable<WeatherForecast> forecasts =  client.GetAsync("http://localhost:5263/WeatherForecast/weatherforecast") as IEnumerable<WeatherForecast>;
             return model;
         }
@@ -53,15 +56,22 @@ namespace Demo.Application.Web.Controllers
         }
 
         [HttpGet]
-        [Route("api/Employee/Details/{id}")]
-        public Employee Details(int id)
+        [Route("{id}")]
+        public Employee Details([FromRoute] string id)
         {
-            return null;
+            return new Employee
+            {
+                EmployeeId = "Slade Wilcox",
+                Name = "Ulla Diaz",
+                City = "Steven Williamson",
+                Department = "Brian Gibson",
+                Gender = "YHT28GNF2CY"
+            };
         }
 
         [HttpPut]
-        [Route("api/Employee/Edit")]
-        public int Edit(Employee employee)
+        [Route("update")]
+        public int Edit([FromBody] Employee employee)
         {
             return 0;
         }

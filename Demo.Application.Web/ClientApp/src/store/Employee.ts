@@ -13,6 +13,14 @@ export interface Employee {
     department?: string;
 }
 
+export interface APIResponse {
+    status: string;
+    errorcode?: string;
+    data?: [];
+    message?: string;
+}
+
+
 export interface EmployeeState {
     isLoading: boolean;
     startDateIndex?: number;
