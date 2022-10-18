@@ -12,4 +12,12 @@ export class DomainConverter {
     static toJson<T>(domain: any) {
         return domain.state as T;
     }
+
+    static getPayload<T>(obj: T, formData: FormData) {
+        const payload: any = {};
+        for (var key in obj) {
+            payload[key.toString()] = formData.get(key.toString());
+        }
+        return payload;
+    }
 }

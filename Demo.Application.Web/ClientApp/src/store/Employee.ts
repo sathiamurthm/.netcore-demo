@@ -18,6 +18,7 @@ export interface APIResponse {
     errorcode?: string;
     data?: [];
     message?: string;
+    department?: string;
 }
 
 
@@ -25,7 +26,6 @@ export interface EmployeeState {
     isLoading: boolean;
     startDateIndex?: number;
     employees: Employee[];
-    mode: 'display';
 }
 
 // -----------------

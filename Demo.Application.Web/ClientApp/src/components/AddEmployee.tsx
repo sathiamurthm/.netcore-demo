@@ -4,6 +4,7 @@ import { Link, NavLink, useParams} from 'react-router-dom';
 import * as EmployeeStore from '../store/Employee';
 import { ApplicationState } from '../store';
 import { connect } from 'react-redux';
+import { DomainConverter } from '../helper/DomainHelper';
 
 type EmployeeProps =
     EmployeeStore.EmployeeState // ... state we've requested from the Redux store
@@ -82,26 +83,12 @@ export class AddEmployee extends React.Component<Props<EmployeeProps>, FetchEmpl
     }
 
     // This will handle the submit form event.
-    private handleSave(event) {
+    private handleSave(event:any) {
         console.log(event);
         event.preventDefault();
         const formData = new FormData(event.target);
-
-        const payload =  {
-            employeeId: formData.get("employeeId"),
-            department: formData.get("Department"),
-            name: formData.get("name"), 
-            gender: formData.get("gender"), 
-                 };
-            
-        //const data = {
-        //    employeeId: "string",
-        //    name: "string",
-        //    city: "string",
-        //    department: "string",
-        //    gender: "string"
-
-        //};
+        
+        const payload = DomainConverter.getPayload<Employee>(new Employee, formData);
 
         // PUT request for Edit employee.
         if (this.state.empList.employeeId) {
@@ -162,7 +149,7 @@ export class AddEmployee extends React.Component<Props<EmployeeProps>, FetchEmpl
                 <div className="form-group row">
                     <label className="control-label col-md-12" htmlFor="Department" >Department</label>
                     <div className="col-md-4">
-                        <input className="form-control" type="text" name="Department" defaultValue={this.state.empList.department} required />
+                        <input className="form-control" type="text" name="department" defaultValue={this.state.empList.department} required />
                     </div>
                 </div>
                 <div className="form-group row">
